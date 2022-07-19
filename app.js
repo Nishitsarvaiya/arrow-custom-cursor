@@ -65,8 +65,8 @@ class Cursor {
 		let t = this.clientX - this.currX,
 			n = this.clientY - this.currY,
 			i = Math.atan2(n, t),
-			r = this.clientX - 50 * Math.cos(i),
-			o = this.clientY - 50 * Math.sin(i);
+			r = this.clientX - 8 * Math.cos(i),
+			o = this.clientY - 8 * Math.sin(i);
 		this.currX += 0.125 * (r - this.currX);
 		this.currY += 0.125 * (o - this.currY);
 		this.draw();
